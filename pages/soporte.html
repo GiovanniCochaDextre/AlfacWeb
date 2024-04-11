@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">    
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="../img/cliente.png" alt="Logo de Cliente">
+        </div>
+        
+        <div class="usuario">
+            <h3>Giovanni Cocha</h3>
+            <a href="../pages/logout.html"><input name="logout" type="submit" value="Logout"></a>
+        </div>
+    </header>
+
+    <main class="cabecera-soporte">
+        <section>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                  <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <a class="nav-link" href="../pages/proformas.html">Proformas</a>
+                      <a class="nav-link" href="../pages/pedidos.html">Pedidos</a>
+                      <a class="nav-link" href="../pages/facturacion.html">Facturación</a>
+                      <a class="nav-link" href="../pages/cuentacobrar.html">Cuenta Corriente</a>
+                      <a class="nav-link" href="../pages/consultas.html">Consultas</a>
+                      <a class="nav-link active" aria-current="page" href="../pages/soporte.html">Soporte</a>
+                    </div>
+                  </div>
+                </div>
+            </nav>
+        </section>
+
+        <section class="main_soporte">
+            <div>
+                <img src="../img/banner.jpg" alt="banner">
+            </div>
+    
+    
+            <div class="soporte_titulo">
+                <h1 class="soporte-h1">Soporte</h1>
+            </div>
+    
+            <section>
+                <div class="soporte_correo">
+                    <div>
+                        <label for="correo">Correo</label>
+                    </div>
+                    <div>
+                        <input type="email" id="correo" name="correo" placeholder="Escribe tu correo">
+                    </div>
+                </div>
+        
+                <div class="soporte_nombres">
+                    <div>
+                        <label for="nombres">Nombres y Apellidos</label>
+                    </div>
+                    <div>
+                        <input type="text" id="nombres" name="nombres" placeholder="Escribe tus nombres y apellidos">
+                    </div>
+                </div>
+        
+                <div class="soporte_comentario">
+                    <div>
+                        <label for="comentario">Comentario</label>
+                    </div>
+                    <div>
+                        <textarea name="comentario" id="comentario" cols="70" rows="10" placeholder="Describe el problema"></textarea>
+                    </div>
+                </div>
+        
+                <div class="soporte_boton">
+                    <a href=""><input name="soporte" type="submit" value="Enviar Correo"></a>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer id="contacto" class="grid-container">
+        <div class="footer_image">
+            <img src="../img/LeoJuda.png" alt="logo Qwerty">
+            <h2>Alfac</h2>
+        </div>
+        <div class="footer_p">
+            <p>Para consultas, escribir al correo codex27@hotmail.com</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>    
+</body>
+</html>
