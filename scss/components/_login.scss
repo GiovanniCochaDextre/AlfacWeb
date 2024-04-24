@@ -1,0 +1,109 @@
+.flex-container {
+    height: 100vh;
+    width: 100%;
+    background-color: #3f3e3c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    div {
+        img {
+            width: 180px;
+            height: 180px;
+            margin-bottom: 45px;
+        }
+    }
+    .login-titulo {
+        h1 {
+            width: 60vh;
+            font-size: 50px;
+            margin-bottom: 30px;
+            background-color: yellow;
+            text-align: center;
+        }
+    }
+    .login-usuario {
+        width: 342px;
+        display: flex;
+        justify-content:flex-start;
+        align-items: center;
+        margin-bottom: 10px;
+        
+        font-size: 25px;
+        color: white;
+
+        label {
+
+        }
+        input {
+            height: 30px;
+            width: 221px;
+            margin-left: 61px;
+        }
+    }
+    .login-contrasena {
+        width: 342px;
+        display: flex;
+        justify-content:flex-start;
+        align-items: center;
+        margin-bottom: 30px;
+    
+        font-size: 25px;
+        color: white;
+
+        label {
+
+        }
+        input {
+            height: 30px;
+            width: 220px;
+            margin-left: 20px;
+        }
+    }
+    .login-boton {
+        padding-top: 10px;
+        padding-right: 40px;
+        padding-bottom: 10px;
+        padding-left: 40px;
+        
+        font-size: 18px;
+        font-weight: 500;
+
+        a {
+            input {
+
+            }
+        }
+    }
+
+
+    div {
+        h1 {
+            width: 60vh;
+            font-size: 50px;
+            margin-bottom: 30px;
+            background-color: yellow;
+            text-align: center;
+        }
+    }
+
+    .logout-img{
+        img {
+            height: 220px;
+            width: 220px;
+        }        
+    }
+
+    .logout-titulo {
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        word-wrap: break-word;
+        word-spacing: 5px;
+    }
+
+
+}
