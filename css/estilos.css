@@ -58,7 +58,7 @@
   width: 220px;
   margin-left: 20px;
 }
-.flex-container .login-boton {
+.flex-container .login-boton a input {
   padding-top: 10px;
   padding-right: 40px;
   padding-bottom: 10px;
