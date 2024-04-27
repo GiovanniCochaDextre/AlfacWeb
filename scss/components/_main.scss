@@ -1,12 +1,12 @@
 main {
-    background-color: #F5F5F5;  /*#F5F5F5*/
+    background-color: $color-background-main;
 
     section {
         h1 {
-            font-size: 45px;
+            font-size: $size-titulo;
             font-weight: 100px;
-            color: #C63D2F;
-            background-color: #F5F5F5;
+            color: $color-background-main-h1;
+            background-color: $color-background-main;
             margin: 10px;
         }
     }
@@ -35,10 +35,13 @@ main {
 
 
         .cabecera-filtro {
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
+            // display: flex;
+            // flex-direction: row;
+            // justify-content: flex-start;
         
+            //@extend %flex-fd_row-jc_start;
+            @include flex(flex,row,start,start);
+
             margin-left: 10px;
 
             div {
@@ -85,19 +88,21 @@ main {
 
     .accion {
         div {
-            background-color: rgb(110, 110, 104);
+            background-color: $color-background-accion;
             height: 100px;
             display: flex;
             ul {
                 list-style: none;
-                display: flex;
-                justify-content:center;
-                align-items : center;
+                @include flex(flex,row,center,center);
+                //@extend %flex-jc_center-ai_center;
+                // display: flex;
+                // justify-content:center;
+                // align-items : center;
                 flex-wrap: wrap;
                 li {
                     .link2 {
-                        background-color: rgb(110, 110, 104);
-                        color: white;
+                        background-color: $color-background-accion;
+                        color: $color-background-accion-link;
                         text-decoration: none;
                         list-style: none;
                         margin: 15px; 

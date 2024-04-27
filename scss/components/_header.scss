@@ -1,11 +1,14 @@
 header {
     max-width: 100%;
     height: 120px;
-    background-color: #F2EAD3;
+    background-color: $color-background-header;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+
+    //@extend %flex-jc_between-ai_center ;
+    @include flex(flex,row,space-between,center);
 
     div {
         img {
@@ -17,9 +20,12 @@ header {
     .usuario {
         height: 37px;
         width: 450px;
-        display: flex;
-        justify-content: end;
-        align-items: end;
+
+        // display: flex;
+        // justify-content: end;
+        // align-items: end;
+        //@extend %flex-jc_end-ai_end;
+        @include flex(flex,row,end,end);
 
         h3{
             width: 25vh;

@@ -1,3 +1,4 @@
+/*en media-qwerys no se puede usar EXTENDS*/
 
 @media screen and (max-width:820px) {
     header .usuario {
@@ -5,8 +6,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around; 
-        /* align-items: start; */
-    
+        /* ---- align-items: start; */
     }
 
     header .usuario h3 {
@@ -194,7 +194,7 @@
         display: flex;
         flex-direction: column;
         justify-content:center;
-        align-items: center;         
+        align-items: center;  
     }
 
     header div img {
@@ -312,7 +312,7 @@
     footer  h2 {
         font-size: 20px;
         width: 80px;
-        color: white;
+        // color: red;
         text-align: center;
     
         margin: auto;    

@@ -17,15 +17,16 @@
         }
         
         section {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around; 
-            align-items: start;
+            // display: flex;
+            // flex-direction: column;
+            // justify-content: space-around; 
+            // align-items: start;
+            //@extend %flex-fd_column-jc_space-around-ai_start;
+            @include flex (flex,column,space-around,start);
             margin-left: 10px;
 
             .soporte-correo {
-                display: flex;
-                flex-direction: row;
+                @extend %flex-fd_row;
                 margin-top: 20px;
                 margin-bottom: 10px;
 
@@ -43,8 +44,7 @@
             }
 
             .soporte-nombres {
-                display: flex;
-                flex-direction: row;
+                @extend %flex-fd_row;
                 margin-bottom: 10px;
 
                 div {

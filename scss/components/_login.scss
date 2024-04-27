@@ -1,12 +1,10 @@
 .flex-container {
     height: 100vh;
     width: 100%;
-    background-color: #3f3e3c;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
+    background-color: $color-background-login;
+    //@extend %flex-fd_column-jc_center-ai_center;
+    @include flex(flex,column,center,center);
+ 
     div {
         img {
             width: 180px;
@@ -19,19 +17,22 @@
             width: 60vh;
             font-size: 50px;
             margin-bottom: 30px;
-            background-color: yellow;
+            background-color: $color-background-login-titulo;
             text-align: center;
         }
     }
     .login-usuario {
         width: 342px;
-        display: flex;
-        justify-content:flex-start;
-        align-items: center;
+        // display: flex;
+        // justify-content:flex-start;
+        // align-items: center;
+        //@extend %flex-jc_start-ai_center;
+        @include flex(flex,row,start,center);
+
         margin-bottom: 10px;
         
         font-size: 25px;
-        color: white;
+        color: $color-background-login-label;
 
         label {
 
@@ -44,13 +45,12 @@
     }
     .login-contrasena {
         width: 342px;
-        display: flex;
-        justify-content:flex-start;
-        align-items: center;
+        //@extend %flex-jc_start-ai_center;
+        @include flex(flex,row,start,center);
         margin-bottom: 30px;
     
         font-size: 25px;
-        color: white;
+        color: $color-background-login-label;
 
         label {
 
@@ -66,9 +66,11 @@
         padding-right: 40px;
         padding-bottom: 10px;
         padding-left: 40px;
-        
         font-size: 18px;
         font-weight: 500;
+
+        background-color: map-get($boton, bg-boton);
+        color: map-get($boton, color-text);
     }
 
 
@@ -77,7 +79,7 @@
             width: 60vh;
             font-size: 50px;
             margin-bottom: 30px;
-            background-color: yellow;
+            background-color: $color-background-login-titulo;
             text-align: center;
         }
     }
@@ -91,10 +93,8 @@
 
     .logout-titulo {
         height: 150px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        //@extend %flex-fd_column-jc_center-ai_center;
+        @include flex(flex,column,center,center);
         word-wrap: break-word;
         word-spacing: 5px;
     }

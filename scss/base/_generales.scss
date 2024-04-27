@@ -1,3 +1,146 @@
+//! LISTAS
+$colores:
+#F2EAD3,
+#F5F5F5,
+#C63D2F,
+#6e6e68,
+white,
+yellow,
+#3f3e3c;
+
+
+//! VARIABLES
+$color-background-header: nth($colores,1);  //#F2EAD3;
+$color-background-nav: nth($colores,1); //#F2EAD3;
+$color-background-main: nth($colores,2); //#F5F5F5;
+$color-background-main-h1: nth($colores,3); //#C63D2F;
+$color-background-accion: nth($colores,4); //#6e6e68;
+$color-background-accion-link: nth($colores,5); //white;
+$color-background-footer: nth($colores,7); // #3f3e3c;
+$color-background-footer-h2: nth($colores,5); // white;
+$color-background-footer-p: nth($colores,5); // white;
+$color-background-login-titulo: nth($colores,6); //yellow;
+$color-background-login-label: nth($colores,5); //white;
+$color-background-login: nth($colores,7); // #3f3e3c;
+
+
+$size-titulo: 45px;
+
+
+//! OPERACIONES: permite asignar variable a la cual se le puede sumar, restar, dividir o multiplicar un valor: no lo voy a usar en este proyecto
+//$ancho:100px; 
+
+//! MAPAS -- aplicado en LOGIN
+$boton: (
+    bg-boton: rgb(149, 147, 147),
+    borde-boton: 2px solid gray,
+    color-text: white,
+);
+
+
+//! EXTENDS
+// %flex-fd_column-jc_space-around-ai_start {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-around; 
+//     align-items: start;
+// }
+
+// %flex-fd_column-jc_center-ai_center {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+// }
+
+
+// %flex-fd_row-jc_start {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: flex-start;
+// }
+
+
+// %flex-jc_start-ai_center {
+//     display: flex;
+//     justify-content:flex-start;
+//     align-items: center;    
+// }
+ 
+// %flex-jc_center-ai_center {
+//     display: flex;
+//     justify-content:center;
+//     align-items: center;  
+// }
+
+// %flex-jc_right-ai_center {
+//     display: flex;
+//     justify-content:right;
+//     align-items:center;    
+// }
+
+// %flex-jc_between-ai_center {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;    
+// }
+
+// %flex-jc_end-ai_end {
+//     display: flex;
+//     justify-content: end;
+//     align-items: end;   
+// }
+
+
+/* lo dejo activo como ejemplo, el resto lo he reemplazo con MIXINGS */
+%flex-fd_row {
+    display: flex;
+    flex-direction: row;
+}
+
+
+//! MIXINGS
+@mixin flex($display, $direction, $justify, $align)
+{
+    display: $display;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+/* no lo uso en el proyecto */
+@mixin modo ($modo-dark) {
+    @if modo-dark==normal {
+        $color-background-header: nth($colores,1);  //#F2EAD3;
+        $color-background-nav: nth($colores,1); //#F2EAD3;
+        $color-background-main: nth($colores,2); //#F5F5F5;
+        $color-background-main-h1: nth($colores,3); //#C63D2F;
+        $color-background-accion: nth($colores,4); //#6e6e68;
+        $color-background-accion-link: nth($colores,5); //white;
+        $color-background-footer: nth($colores,7); // #3f3e3c;
+        $color-background-footer-h2: nth($colores,5); // white;
+        $color-background-footer-p: nth($colores,5); // white;
+        $color-background-login-titulo: nth($colores,6); //yellow;
+        $color-background-login-label: nth($colores,5); //white;
+        $color-background-login: nth($colores,7); // #3f3e3c;
+    }@else{
+        $color-background-header: blue;
+        $color-background-nav: blue;
+        $color-background-main: rgb(106, 106, 236);
+        $color-background-main-h1: white;
+        $color-background-accion: rgb(21, 16, 16);
+        $color-background-accion-link: white;
+        $color-background-footer: rgb(88, 87, 87);
+        $color-background-footer-h2: white;
+        $color-background-footer-p: white;
+        $color-background-login-titulo: yellow;
+        $color-background-login-label: white;
+        $color-background-login: rgb(35, 15, 15);
+    }
+}
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -6,5 +149,7 @@
 }
 
 .bg-body-tertiary  {
-    background-color: #F2EAD3 !important;
+    // background-color: #F2EAD3 !important;
+    background-color: $color-background-nav !important;
 }
+
