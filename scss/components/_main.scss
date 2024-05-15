@@ -8,6 +8,19 @@ main {
             color: $color-background-main-h1;
             background-color: $color-background-main;
             margin: 10px;
+
+            animation: slidein 1s ease-in-out;
+        }
+    }
+
+    @keyframes slidein {
+        from {
+            margin-left: 100%;
+            width: 300%;
+        }
+        to {
+            margin-left: 0;
+            width: 100%;
         }
     }
 
@@ -21,16 +34,23 @@ main {
             }
         }
 
+        h1 {
+            transition: 2s;
+        }
+
+        h1:hover {
+            transform: translateX(50px);
+        }
 
         .cabecera-buscardesde {
             margin-left: 10px;
             margin-bottom: 10px;
-            label {
+            // label {
 
-            }
-            input {
+            // }
+            // input {
 
-            }
+            // }
         }
 
 
@@ -70,6 +90,9 @@ main {
             }
         }
     }
+
+
+
 
     .detalle {
         div {

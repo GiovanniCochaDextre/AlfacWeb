@@ -92,6 +92,12 @@
         font-size: 12px;
     }
         
+    .flex-container .login-titulo {
+        h1 {
+            width: 50vh;
+            font-size: 40px;
+        }
+    }
 
     .cabecera-soporte .main-soporte section .soporte-correo {
         flex-direction: column;
@@ -124,6 +130,21 @@
     .flex-container div h1{
         width: 40vh;
         font-size: 40px;
+    }
+
+    .flex-container .login-titulo {
+        h1 {
+            width: 40vh;
+            font-size: 40px;
+        }
+    }
+
+    .flex-container .login-usuario label {
+        margin-left: 20px;
+    }
+
+    .flex-container .login-contrasena label {
+        margin-left: 20px;
     }
 
     .flex-container .login-usuario {
@@ -171,6 +192,38 @@
 }
 
 @media screen and (max-width:362px) {
+
+    .flex-container .login-titulo {
+        h1 {
+            width: 35vh;
+            font-size: 35px;
+        }
+    }
+
+    .flex-container .logout-titulo {
+        h1 {
+            width: 35vh;
+            font-size: 35px;
+        }
+    }
+
+    .flex-container .login-usuario label {
+        margin-left: 30px;
+    }
+
+    .flex-container .login-contrasena label {
+        margin-left: 30px;
+    }
+
+    .flex-container .login-usuario input {
+        width: 180px;
+        margin-left: 37px;
+    }
+
+    .flex-container .login-contrasena input {
+        width: 180px;
+        margin-left: 10px;
+    }
     .consultas input {
         margin-top: 10px;
     }

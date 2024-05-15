@@ -11,34 +11,37 @@
  
     div {
         img {
-            width: 180px;
-            height: 180px;
+            width: 220px;
+            height: 220px;
             margin-bottom: 45px;
+            transition: 2s;
         }
     }
+
+
+
     .login-titulo {
-
-
         h1 {
             // transition-property: width ;
             // transition-duration: 1s;
             // transition-timing-function: ease-in;
             
-            transition: 3s,1s;
+            //transition: 3s,1s;
 
             width: 60vh;
             font-size: 50px;
             margin-bottom: 30px;
             background-color: $color-background-login-titulo;
             text-align: center;
+            border-radius: 25px;
         }
     }
 
-    .login-titulo h1:hover {
-        width: 800px;
-        height: 70px;
-        border-radius: 25px;
-    }
+    // .login-titulo h1:hover {
+    //     width: 800px;
+    //     height: 70px;
+    //     border-radius: 25px;
+    // }
 
     .login-usuario {
         width: 342px;
@@ -98,25 +101,36 @@
             width: 60vh;
             font-size: 50px;
             margin-bottom: 30px;
-            background-color: $color-background-login-titulo;
+            //background-color: $color-background-login-titulo;
             text-align: center;
+
+            background: rgb(2,0,36);
+            background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(220,222,79,1) 0%, rgba(227,220,49,1) 49%);
         }
     }
 
     .logout-img{
         img {
-            height: 220px;
-            width: 220px;
+            height: 250px;
+            width: 250px;
         }        
     }
 
     .logout-titulo {
-        height: 150px;
+        
         //@extend %flex-fd_column-jc_center-ai_center;
         @include flex(flex,column,center,center);
+        border-radius: 20px;
         word-wrap: break-word;
         word-spacing: 5px;
     }
 
 
+
+
+}
+
+.flex-container div img:hover{
+    //transform: scale(1.5);
+    transform: rotateY(180deg);
 }
